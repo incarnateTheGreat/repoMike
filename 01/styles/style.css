@@ -1,0 +1,30 @@
+/* Mike's CSS */
+h1 {
+  text-decoration: underline;
+}
+nav {
+  border: 1px solid red;
+  font-size: 18px;
+}
+
+.keypad {
+
+}
+.keypad .keypad_row {
+  clear: both;
+  overflow: hidden;
+}
+.keypad .keypad_row div {
+  border: 1px solid black;
+  float: left;
+  cursor: pointer;
+  padding: 25px;
+  font-size: 52px;
+}
+.keypad .keypad_row div.equals {
+  width: 255px;
+  text-align: center;
+}
+.keypad .keypad_row div:hover {
+  background-color: red;
+}
