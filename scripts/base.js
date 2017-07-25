@@ -17,6 +17,36 @@ var calcKeypad = {
   btn_cancel: 'Cancel'
 };
 
+
+let keypad_row = document.querySelectorAll('.keypad_row.numeric');
+
+for(let i = 0; i < keypad_row.length; i++) {
+  for(let j = 0; j < keypad_row[i].childNodes.length; j++) {
+    if(keypad_row[i].childNodes[j].nodeName === 'DIV') {
+      keypad_row[i].childNodes[j].className = 'garry';
+    }
+  }
+}
+
+// for(let i = 0; i < keypad_row[0].childNodes.length; i++) {
+//   if(keypad_row[0].childNodes[i].nodeName === 'DIV') {
+//     keypad_row[0].childNodes[i].className = 'garry';
+//   }
+// }
+//
+// for(let i = 0; i < keypad_row[1].childNodes.length; i++) {
+//   if(keypad_row[1].childNodes[i].nodeName === 'DIV') {
+//     keypad_row[1].childNodes[i].className = 'garry';
+//   }
+// }
+// for(let i = 0; i < keypad_row[2].childNodes.length; i++) {
+//   if(keypad_row[2].childNodes[i].nodeName === 'DIV') {
+//     keypad_row[2].childNodes[i].className = 'garry';
+//   }
+// }
+
+
+
 document.getElementById("btn_1").addEventListener("click", function(e){
   console.log(calcKeypad[this.id]);
 });
